@@ -1,0 +1,43 @@
+body{
+    background-image: linear-gradient(to top right, #f3ec78, #af4261);
+    background-repeat: no-repeat;
+    height: 1000vh;
+    background-position: center;
+    background-size: cover;
+}
+h1{
+   font-family: 'Pacifico', cursive;
+   color: #4f2a2a;
+   
+}
+h3{
+    color: #4f2a2a
+}
+i{
+    color: #E3C373;
+}
+label{
+    font-family:'Pacifico',cursive; 
+    color: #BD6566;
+}
+button{
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    color: #4f2a2a !important;
+    font-family: 'Pacifico', cursive;
+}
+
+.search{
+    background-color: #D1976D;
+}
+.search1>label>i{
+    font-size:32px;
+}
+a{
+    color: #4f2a2a !important; 
+}
+a>i{
+color: #4f2a2a;
+}
+td>.btn>i{
+    color: #4f2a2a;
+}
