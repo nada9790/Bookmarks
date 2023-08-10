@@ -6,17 +6,8 @@ var addButton=document.getElementById("addBtn")
 
 if (localStorage.getItem("websites") != null) {
     webSiteContainer = JSON.parse(localStorage.getItem('websites'))
-    var container = ``;
-    for (var i = 1; i < webSiteContainer.length; i++) {
-      container += `
-            <tr>
-                <td>${i}</td>
-                <td>${webSiteContainer[i].websiteName}</td>
-                <td><button class="btn fw-bold  "><a href="${webSiteContainer[i].websiteUrl}" class="text-decoration-none"><i class="fa-regular fa-eye px-1"></i>Visit</a></button></td>
-                <td><button class="btn fw-bold " onclick="deleteWebsite(i)"><i class="fa-solid fa-trash-can px-1"></i>Delete</button></td>
-            </tr>
-            `
-    } 
+    
+    displayData()
 }; 
 var webSiteContainer = [];
 function addWebsite() {
@@ -29,7 +20,7 @@ function addWebsite() {
     displayData()
     clear()
     
-    document.getElementById("tbody").innerHTML = container;
+    ;
 }
 function displayData() {
     var container = ``;
@@ -43,6 +34,7 @@ function displayData() {
             </tr>
             `;
     }
+    document.getElementById("tbody").innerHTML = container;
     
 }
 function clear(){
@@ -54,8 +46,9 @@ function deleteWebsite(index) {
     displayData()
 
 }
-var container2=``
+
 function search(search) {
+    var container2 = ``;
     for (i = 1; i < webSiteContainer.length; i++){
       if (
         webSiteContainer[i].websiteName
