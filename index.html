@@ -25,7 +25,7 @@
     <div class="search w-50 m-auto">
         <div class="search1 my-2 p-2 d-flex justify-content-center align-items-center bg-light border-5 rounded-3">
             <label for="search" class="text-center px-3"><i class="fa-solid fa-magnifying-glass d-flex"></i></label>
-            <input type="text" onkeyup="search(this.value)" id="search" class="form-control " placeholder="Search">
+            <input type="text" oninput="searchWebsite(this.value)" id="search" class="form-control " placeholder="Search">
         </div>
     </div>
     <div class="inputsBox bg-light shadow-lg p-2 border-5 rounded-3 w-75 m-auto ">
@@ -38,7 +38,7 @@
             <input type="text" id="siteUrl" class="form-control" placeholder="Site URL">
         </div>
         <div class="btn d-flex justify-content-center">
-            <button class="btn  fw-bold" onclick="addWebsite()" id="addBtn">Submit</button>
+            <button class="btn  fw-bold" onclick="addWebSite()" id="addBtn">Submit</button>
         </div>
 
     </div>
